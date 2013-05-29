@@ -3,7 +3,6 @@ call pathogen#helptags()
 
 " I'm lazy and don't want to hit shift
 nmap ; :
-
 set cindent
 set tabstop=4
 set shiftwidth=4
@@ -41,9 +40,14 @@ set tags+=~/development/virtual_environments/clincard/bin
 autocmd BufWritePre * :%s/\s\+$//e
 
 "Change color of pyflakes error line background
-highlight SpellBad term=underline gui=undercurl guisp=Blue
-
-let g:pathogen_disabled = ['pyflakes']
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline guisp=Orange
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
 
 "let g:flake8_builtins="_,apply"
 
@@ -53,3 +57,13 @@ map <CR> o<Esc>
 
 set cc=81
 hi ColorColumn ctermbg=lightblue guibg=lightblue
+
+" Jumps to search word as you type
+set incsearch
+
+" source $MYVIMRC reloads the saved $MYVIMRC
+nmap <Leader>s :source $MYVIMRC
+
+" Abbreviations
+ab date_ from datetime import date, timedelta
+ab _b #!/usr/bin/env python
