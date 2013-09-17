@@ -104,9 +104,9 @@ export PATH=/opt/ActivePython-2.7/bin:$PATH
 alias agi='sudo apt-get install'
 alias runserver='./manage.py runserver --settings=$DJANGO_SETTINGS_MODULE'
 alias shell='./manage.py shell --settings=$DJANGO_SETTINGS_MODULE'
+alias startlocal='./manage.py runserver --settings=$DJAGNO_SETTINGS_MODULE'
 
-# This will do a speaker test for the HDMI source so that you can use it
-# to output audio if device is not showing up in settings.
+# This will do a speaker test for the HDMI source so that you can use it to output audio if device is not showing up in settings.
 # After running it for a while stop it and the device should then be listed.
 alias hdmi-audio='speaker-test -c 2 -r 48000 -D hw:0,3'
 
@@ -124,12 +124,9 @@ export C=/home/austin/development/clincard/clincard/scripts/
 export G=/home/austin/development/clincard/clincard
 source /home/austin/development/virtual_environments/clincard/bin/activate
 alias grep='grep -rn'
-alias ack='ack-grep'
-alias salix='cd ~/development/salix; source ~/development/salix_processing/bin/activate'
-alias clin='cd $S; source ~/development/virtual_environments/clincard/bin/activate'
+alias salix='cd ~/development/salix'
+alias clin='cd $S'
 alias bb='deactivate; source ~/development/virtual_environments/bbbsliny/bin/activate; cd ~/bbbsliny/bbbsliny/bbbsliny'
-alias rose='deactivate; source ~/development/virtual_environments/rosemont/bin/activate; cd ~/development/rosemont'
-export GREP_OPTIONS='--color=always'
 export GREP_OPTIONS='--color=always'
 
 # Map the caps lock key to the escape key
@@ -137,6 +134,3 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 # PEP 370 PATH added by PyPM on 2012-12-17 14:02:48.167799
 #export PATH=/home/austin/.local/bin:$PATH
-
-
-WORK_DIR=/tmp
