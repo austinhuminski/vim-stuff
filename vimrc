@@ -1,5 +1,11 @@
+source ~/.vim/ftplugin/matchit.vim
+syntax on
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+" Make the backspace button on MAC act as expected
+set backspace=indent,eol,start
 
 " I'm lazy and don't want to hit shift
 nmap ; :
@@ -53,3 +59,29 @@ map <CR> o<Esc>
 
 set cc=81
 hi ColorColumn ctermbg=lightblue guibg=lightblue
+
+syntax on
+
+set incsearch
+set hlsearch
+
+"Use find to search recursivley
+set path +=**
+
+set ruler
+
+set modeline
+set ls=2
+
+" Comment color
+highlight Comment ctermfg=green
+
+" Tern-vim
+let g:tern_map_keys=1
+let g:tern_show_argument_hints='on_hold'
+
+
+let g:pymode_lint_on_fly = 0
+
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
