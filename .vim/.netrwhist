@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/austin/development/clincard/clincard/src/greenphire/web/clinclient'
+let g:netrw_dirhist_2='/home/austin/development/clincard/clincard/src/greenphire/web/clinclient/templates'
+let g:netrw_dirhist_3='/home/austin/development/clincard/clincard/src/greenphire/web/clinclient/templates/clinclient'
+let g:netrw_dirhist_4='/home/austin/development/clincard/clincard/src/greenphire/web/clinclient/tests/views'
+let g:netrw_dirhist_5='/home/austin/Desktop/voice_rec/PiAUISuite/VoiceCommand'
+let g:netrw_dirhist_6='/home/austin/development/virtual_environments/bbbsliny/lib/python2.7/site-packages/django/contrib/admin/views'
+let g:netrw_dirhist_7='/home/austin/bbbsliny/bbbsliny/bbbsliny/history'
+let g:netrw_dirhist_8='/home/austin/development/clincard/clincard/src/greenphire/web/clinclient/templates/clinclient/gpadmin'
+let g:netrw_dirhist_9='/home/austin'
